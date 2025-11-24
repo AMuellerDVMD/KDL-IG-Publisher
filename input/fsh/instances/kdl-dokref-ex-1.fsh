@@ -1,0 +1,14 @@
+Instance: kdl-dokref-ex-1
+InstanceOf: DocumentReference
+Usage: #example
+* masterIdentifier
+  * system = "urn:ietf:rfc:3986"
+  * value = "urn:oid:1.2.276.0.76.3.1.191.0002.01.9999999999999.00000001.999.99.9999999999999999"
+* status = #current
+* type = CodeSystemKDL#AD010103 "Entlassungsbericht intern"
+* subject = Reference(Patient/example)
+* date = "2018-10-30T07:24:22+00:00"
+* description = "Epikrise"
+* content.attachment
+  * language = #de-DE
+  * url = "Binary/95a0827c-b3dc-41b6-a114-f7dde38e9f3e"
