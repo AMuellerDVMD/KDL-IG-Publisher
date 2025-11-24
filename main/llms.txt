@@ -3,6 +3,7 @@
 ## Pages
 
 * [Home](index.md)
+* [Aenderungen Zur Vorversion](Aenderungen-zur-Vorversion.md)
 * [Artifacts Summary](artifacts.md)
 
 ## Resources

@@ -9,7 +9,7 @@
   "version" : "2025.0.1",
   "name" : "KDL",
   "status" : "active",
-  "date" : "2025-11-24T14:59:13+00:00",
+  "date" : "2025-11-24T15:17:51+00:00",
   "publisher" : "Der Fachverband für Dokumentation und Informationsmanagement in der Medizin (DVMD)",
   "contact" : [{
     "name" : "Der Fachverband für Dokumentation und Informationsmanagement in der Medizin (DVMD)",
@@ -687,6 +687,15 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Aenderungen-zur-Vorversion.html"
+        }],
+        "nameUrl" : "Aenderungen-zur-Vorversion.html",
+        "title" : "Aenderungen Zur Vorversion",
         "generation" : "markdown"
       }]
     },

@@ -83,7 +83,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="Aenderungen-zur-Vorversion.html">Änderungen zur Vorversion</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifakte</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -175,9 +178,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="kdl">KDL</h1>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+<h1 id="hauptseite">Hauptseite</h1>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Die Klinische Dokumentenklassen-Liste (KDL) ist eine Entwicklung der anwendungsorientierten Forschung der DMI GmbH &amp; Co. KG aus den Jahren 2013 – 2018 und basiert auf der Erfahrung aus der Indexierung von jährlich rund 4 Millionen Patientenakten mit 200 Millionen Dokumenten. In 2018 ist die KDL für die Weiterentwicklung in den DVMD e. V. überführt wurden.</p>
+
+<p>Als Ergebnis dieser umfassenden Praxiserfahrung von Dokumenttyp-Benennungen deutscher Krankenhäuser leistet die KDL einen wichtigen Beitrag zur semantischen Interoperabilität in der Gesundheits-IT: Sie ermöglicht das Klassieren, also die Zuordnung, interner Dokumenttyp-Benennungen der Einrichtungen zu den Bezeichnungen bei Stakeholdern – und schafft so die Basis für den digitalen Austausch. Zu den zahlreichen potenziellen Stakeholdern in der Kommunikation, die bei der Informationen aus Patientenakten eine Rolle spielen, zählen unter anderem Leistungspartner in der Behandlungskette, Kostenträger, der Medizinische Dienst, Behörden und der Patient.</p>
+
+<p>Die KDL ermöglicht eine einheitliche Bezeichnung der enorm vielfältigen Dokumententyp-Benennungen im täglichen Gebrauch. Sie stellt den Kern von Dokumententypen in einer medizinischen Einrichtung dar.</p>
+
+<h2 id="zweckbestimmung-dieses-leitfadens">Zweckbestimmung dieses Leitfadens</h2>
+
+<p>Dieser Implementierungsleitfaden soll es Anwendern und Entwicklern erleichtern, die KDL in FHIR-basierte Systeme zu integrieren. Die Repräsentation und Bereitstellung der Terminologie in einem standardisierten, maschinenlesbaren Format, reduziert den Aufwand bei der Implementierung erheblich und macht die KDL für FHIR-basierte Anwendungssysteme bzw. Terminologieserver umgehend nutzbar.</p>
+
+<p>Mit dem neuen HL7©-Standard FHIR© liegt erstmals ein moderner webbasierter Standard für das Gesundheitswesen vor, der es Entwicklern erlaubt, klinische Informationen und Terminologien mit einer einheitlichen technologischen Basis zu integrieren.</p>
+
+<p>Eine standardisierte Terminologie-API erlaubt die Anbindung spezialisierter Terminologie-Dienste in Anwendungssysteme sowie den standardisierten Austausch von Terminologien.</p>
+
+<p>Mehr Informationen zum Umgang mit Terminologien in FHIR sind in der Spezifikation des <a href="http://hl7.org/implement/standards/fhir/terminology-module.html">FHIR Terminologie Moduls (R4)</a> zu finden.</p>
+
+<p>Für Fragen zur FHIR-Implementierung im Allgemeinen und der Nutzung von Terminologie-Ressourcen im Besonderen, können folgende Foren im Internationalen FHIR Chat genutzt werden:</p>
+<ul>
+  <li><a href="https://chat.fhir.org/#narrow/stream/179183-german-(d-a-ch)">deutschsprachiges Forum</a></li>
+  <li><a href="https://chat.fhir.org/#narrow/stream/179166-implementers">allgemeine Implementierungsfragen</a></li>
+  <li><a href="https://chat.fhir.org/#narrow/stream/179202-terminology">Terminologie-Forum</a></li>
+</ul>
+
+<h2 id="bereitstellung-der-technischen-spezifikation">Bereitstellung der Technischen Spezifikation</h2>
+<p>Die mit diesem Leitfaden assozizierten FHIR-Ressourcen sind als Packages publiziert.
+Die aktuelle sowie vergangene Versionen können unter folgendem Link heruntergeladen werden:</p>
+
+<p>https://simplifier.net/kdl/~packages</p>
+
+<p>Unter folgendem Link finden Sie stets die aktuelle Arbeitsversion:</p>
+
+<p>https://simplifier.net/KDL/~introduction</p>
+
+<h2 id="ansprechpartner-gültigkeit-lizenzbedingungen">Ansprechpartner, Gültigkeit, Lizenzbedingungen</h2>
+<p>Die KDL-2025 gilt ab 1. Januar 2025.</p>
+
+<p>Weitere Empfehlungen, Änderungswünsche und Hinweise sind bis 15. September 2025 an die Leitung der AG, Annett Müller (mueller@dvmd.de), zu senden. Gemeinsam mit den Teilnehmenden der AG "Weiterentwicklung KDL", aber auch im regelmäßigen Austausch mit der "KDL-Anwendergruppe" werden die Einreichungen diskutiert. Ergeben sich daraus essentielle Anpassungen des Klassiifkationssystems, ist die Notwendigkeit einer neuen Version gegeben.</p>
+
+<p>Weitere Informationen sind auf der Webseite des DVMD zu finden: https://dvmd.de/publikationen/kdl/. Bitte beachten Sie auch die Veranstaltungen des DVMD - u. a. zur KDL: https://dvmd.de/veranstaltungen/</p>
+
+<p>Copyright: 
+2013-2018 DM GmbH &amp; Co. KG
+seit 2018 DVMD e.V.</p>
+
+<p>Die KDL ist frei verfügbar. Sie können das CodeSystem unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren veröffentlichten Version, weiter verteilen und/oder modifizieren.</p>
+
+<p>Die KDL wird ohne jede Gewähr bereitgestellt. Für weitere Einzelheiten verweisen wir auf die GNU General Public License unter https://www.gnu.org/licenses/</p>
+
+<h2 id="danksagung">Danksagung</h2>
+<p>Diese Publikation wurde erstellt mit freundlicher Unterstützung von</p>
+
 
 
 
@@ -197,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.dvmd.de">Der Fachverband für Dokumentation und Informationsmanagement in der Medizin (DVMD)</a>.  Package dvmd.kdl.r4#2025.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 24, 2025 14:59+0000">2025-11-24</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.dvmd.de">Der Fachverband für Dokumentation und Informationsmanagement in der Medizin (DVMD)</a>.  Package dvmd.kdl.r4#2025.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 24, 2025 15:17+0000">2025-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

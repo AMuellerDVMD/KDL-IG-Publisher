@@ -3,7 +3,7 @@ KDL : Validation Results
 
 err = 12, warn = 82, info = 2
 IG Publisher Version: 2.0.26
-Generated Mon Nov 24 15:00:27 UTC 2025. FHIR version 4.0.1 for dvmd.kdl.r4#2025.0.1 (canonical = http://dvmd.de/fhir)
+Generated Mon Nov 24 15:18:52 UTC 2025. FHIR version 4.0.1 for dvmd.kdl.r4#2025.0.1 (canonical = http://dvmd.de/fhir)
  Build Errors : 3 / 4 / 0
  /__w/KDL-IG-Publisher/KDL-IG-Publisher/fsh-generated/resources/CodeSystem-kdl-cs-2025 : 3 / 4 / 1
  /__w/KDL-IG-Publisher/KDL-IG-Publisher/fsh-generated/resources/ConceptMap-kdl-ihe-classcode : 0 / 35 / 1
@@ -14,9 +14,9 @@ Generated Mon Nov 24 15:00:27 UTC 2025. FHIR version 4.0.1 for dvmd.kdl.r4#2025.
  /__w/KDL-IG-Publisher/KDL-IG-Publisher/fsh-generated/resources/ValueSet-kdl-vs-2025 : 3 / 0 / 1
 </table>
 == n/a ==
-ERROR: DocumentReference-kdl-dokref-ex-1.html#/html/body/div/div/div/div/div/div/p/a at Line 176, column 339: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: DocumentReference-kdl-dokref-ex-2.html#/html/body/div/div/div/div/div/div/p/a at Line 176, column 516: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: DocumentReference-kdl-dokref-ex-2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 176, column 1133: The link 'Encounter/example' for "Encounter/example" cannot be resolved
+ERROR: DocumentReference-kdl-dokref-ex-1.html#/html/body/div/div/div/div/div/div/p/a at Line 179, column 339: The link 'Patient/example' for "Patient/example" cannot be resolved
+ERROR: DocumentReference-kdl-dokref-ex-2.html#/html/body/div/div/div/div/div/div/p/a at Line 179, column 516: The link 'Patient/example' for "Patient/example" cannot be resolved
+ERROR: DocumentReference-kdl-dokref-ex-2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 179, column 1133: The link 'Encounter/example' for "Encounter/example" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
