@@ -20,18 +20,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest
+      image: ghcr.io/gefyra/ig-publisher:latest
     env:
       INPUT_DIR: .
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      # Download dependencies via FHIR Package Tool using sushi-config.yaml from Resources
-      - name: Download Dependencies
-        run: |
-          fhir-pkg-tool --sushi-deps-file ${{ env.INPUT_DIR }}/sushi-config.yaml
 
       # Run SUSHI (FSH -> FHIR conversion) on Resources directory
       - name: Run SUSHI
