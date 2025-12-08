@@ -1,0 +1,34 @@
+{
+  "taskButtons.tasks": [
+    {
+      "label": "$(tools) SUSHI Build",
+      "task": "SUSHI: Build FSH",
+      "tooltip": "Build FSH files with SUSHI"
+    },
+    {
+      "label": "$(package) Full Build",
+      "task": "IG Publisher: Full Build",
+      "tooltip": "Run complete IG Publisher build"
+    },
+    {
+      "label": "$(cloud-download) Update Publisher",
+      "task": "Update IG Publisher",
+      "tooltip": "Update IG Publisher to latest version"
+    },
+    {
+      "label": "$(archive) Download Dependencies",
+      "task": "FHIR Package: Download and Snapshot Dependencies",
+      "tooltip": "Download and snapshot FHIR package dependencies"
+    },
+    {
+      "label": "$(globe) Serve IG",
+      "task": "Serve IG Locally",
+      "tooltip": "Serve IG locally on port 8080"
+    },
+    {
+      "label": "$(git-commit) Commit",
+      "task": "Git: Commit Changes",
+      "tooltip": "Änderungen committen (speichert alle Dateien)"
+    }
+  ]
+}
