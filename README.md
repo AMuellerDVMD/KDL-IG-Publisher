@@ -1,10 +1,10 @@
 # KDL Implementation Guide
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Gefyra/KDL-IG-Publisher)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Gefyra/KDL-IG-Publisher?quickstart=1)
 
 Willkommen zum KDL Implementation Guide! Dieses Projekt verwendet FHIR Shorthand (FSH) zur Erstellung eines FHIR Implementation Guides.
 
-**Veröffentlichte Version:** https://gefyra.github.io/KDL-IG-Publisher/main/
+**Voransicht des aktuellen CodeStands:** https://gefyra.github.io/KDL-IG-Publisher/main/
 
 ## 🚀 Schnellstart für Anfänger
 
@@ -20,75 +20,90 @@ Alle benötigten Tools (SUSHI, IG Publisher, etc.) sind bereits vorinstalliert.
 
 ## 🔧 Task Buttons - Ihre Werkzeuge
 
-In der **Statusleiste unten** in VS Code sehen Sie praktische Buttons für die wichtigsten Aufgaben. Manche Tasks befinden sich in einem Dropdown-Menü (▼ Symbol klicken).
+**Schauen Sie in die Statusleiste ganz unten in VS Code!** Dort finden Sie praktische Buttons für alle wichtigen Aufgaben.
 
-### Die wichtigsten Tasks (in der Reihenfolge):
+### Die wichtigsten Tasks für den Start:
 
-#### 1. 🔧 **SUSHI Build** ⭐ **Immer zuerst!**
+#### 🔧 **SUSHI Build** ⭐
 Kompiliert Ihre FSH-Dateien zu FHIR-Ressourcen
-- **Führen Sie dies zuerst aus** nach Änderungen in `input/fsh/`
+- Finden Sie im **Build-Dropdown** (ganz links in der Statusleiste)
+- **Führen Sie dies nach jeder Änderung aus** in `input/fsh/`
 - Schnelle Fehlerprüfung Ihrer FSH-Syntax
 - **Dauer:** ca. 10-30 Sekunden
-- **Wann nutzen:** Nach jeder Änderung an FSH-Dateien
+- **Wichtig:** Schauen Sie sich die Ausgabe im Terminal an!
 
-#### 2. 📦 **Full Build** ⭐ **Vor dem Ansehen!**
-Erstellt den kompletten Implementation Guide
-- **Muss ausgeführt werden, bevor Sie "Serve IG" nutzen**
-- Kompiliert alle FSH-Dateien
-- Generiert die vollständige HTML-Dokumentation
-- Prüft auf Fehler und Warnungen
+#### 💾 **Commit** ⭐⭐⭐ **WICHTIG!**
+**Dies ist der wichtigste Button!** Hier speichern Sie Ihre Arbeit dauerhaft.
+
+- **Nach einem Commit passiert automatisch:**
+  - ✅ Ihre Änderungen werden in Git gesichert
+  - ✅ Ein vollständiger Build wird auf GitHub ausgeführt
+  - ✅ Der Implementation Guide wird auf GitHub Pages aktualisiert
+  - ✅ Sie können ihn unter https://gefyra.github.io/KDL-IG-Publisher/main/ ansehen
+
+- **So nutzen Sie Commit:**
+  1. Klicken Sie auf den **💾 Commit** Button (rechts in der Statusleiste)
+  2. Geben Sie eine aussagekräftige Nachricht ein (z.B. "CodeSystem für Laborwerte hinzugefügt")
+  3. Warten Sie ca. 5-10 Minuten, bis der automatische Build fertig ist
+  4. Schauen Sie sich das Ergebnis auf GitHub Pages an
+
+> **💡 Wichtig:** Committen Sie regelmäßig! Nur durch Commits werden Ihre Änderungen gespeichert und veröffentlicht.
+
+### Optionale Tasks (für Fortgeschrittene):
+
+#### 📦 **Full Build** (im Build-Dropdown)
+Erstellt den kompletten Implementation Guide lokal
+- **Nur wenn Sie den IG lokal ansehen möchten** (vor "Serve IG")
+- **Nicht zwingend erforderlich** - nach einem Commit wird der IG automatisch neu gebaut
 - **Dauer:** ca. 2-5 Minuten
 
-#### 3. 🌐 **Serve IG**
+#### 🌐 **Serve IG**
 Startet einen lokalen Webserver zum Ansehen des IGs
-- **Wichtig:** Führen Sie erst "Full Build" aus!
-- Zeigt den generierten IG im Browser an
-- **URL:** http://localhost:8080
-- Im Browser: Klicken Sie auf `index.html`
+- **Nur nötig, wenn Sie den IG lokal prüfen möchten**
+- Führen Sie erst "Full Build" aus!
+- **URL:** http://localhost:8080 → dann `index.html` öffnen
 
-#### 4. 💾 **Commit**
-Speichert Ihre Änderungen in Git
-- Öffnet ein Eingabefeld für Ihre Commit-Nachricht
-- Beispiel: "CodeSystem für Laborwerte hinzugefügt"
-- Alle geänderten Dateien werden automatisch gespeichert
-
-### Weitere Tasks (im Dropdown):
-
-#### ☁️ **Update Publisher**
+#### ☁️ **Update Publisher** (im Build-Dropdown)
 Aktualisiert den IG Publisher auf die neueste Version
 - Nur bei Bedarf ausführen
 - **Wann nutzen:** Bei Fehlermeldungen oder wenn neue Features benötigt werden
 
-#### 📚 **Download Dependencies**
+#### 📚 **Download Dependencies** (im Build-Dropdown)
 Lädt benötigte FHIR-Pakete herunter
 - Nur bei neuen Abhängigkeiten nötig
 - **Wann nutzen:** Nach Änderungen in `sushi-config.yaml`
 
-## 📝 Typischer Workflow
+## 📝 Typischer Workflow für Anfänger
 
-**So arbeiten Sie mit dem Implementation Guide:**
+**Der einfachste Weg - nur 2 Schritte nötig:**
 
 1. **FSH-Dateien bearbeiten** in `input/fsh/`
    - Erstellen oder ändern Sie CodeSystems, ValueSets, Profile etc.
 
-2. **🔧 SUSHI Build** klicken
+2. **🔧 SUSHI Build** klicken (im Build-Dropdown)
    - Prüfen Sie, ob Ihre FSH-Syntax korrekt ist
    - Schauen Sie sich Fehlermeldungen im Terminal an
+   - Bei Fehlern: Korrigieren und erneut SUSHI Build ausführen
 
-3. **📦 Full Build** klicken
-   - Erstellt die vollständige HTML-Dokumentation
-   - Warten Sie, bis der Build abgeschlossen ist (ca. 2-5 Min)
-
-4. **🌐 Serve IG** klicken
-   - Öffnen Sie http://localhost:8080 im Browser
-   - Navigieren Sie zu `index.html`
-   - Prüfen Sie Ihr Ergebnis!
-
-5. **💾 Commit** klicken
+3. **💾 Commit** klicken ⭐
    - Beschreiben Sie, was Sie geändert haben
-   - Ihre Änderungen sind jetzt gesichert
+   - **Fertig!** GitHub baut und veröffentlicht automatisch
 
-> **💡 Tipp:** Der Workflow ist immer: **SUSHI → Full Build → Serve → Commit**
+4. **Warten Sie ca. 5-10 Minuten**
+   - Der IG wird automatisch neu gebaut
+   - Schauen Sie auf https://gefyra.github.io/KDL-IG-Publisher/main/
+
+> **💡 Tipp:** Der Workflow ist: **SUSHI Build → Commit → Warten → Auf GitHub Pages ansehen**
+
+### Erweitert: Lokale Vorschau (Optional)
+
+Wenn Sie den IG **vor dem Commit** lokal ansehen möchten:
+
+1. **🔧 SUSHI Build** (im Build-Dropdown)
+2. **📦 Full Build** (im Build-Dropdown) - ca. 2-5 Minuten warten
+3. **🌐 Serve IG** klicken
+4. Browser öffnen: http://localhost:8080/index.html
+5. **💾 Commit** klicken, wenn alles gut aussieht
 
 ## 📁 Projektstruktur
 
