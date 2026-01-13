@@ -5,7 +5,8 @@ Bereits vorliegende Vorgänge sind unter https://art-decor.org/ad/#/kdl-/issues/
 
 ## KDL-2026 - KDL-2025
 
-### Neue KDL-Dokumentenklassen (Level 3)
+### Neue KDL-Dokumentenklasse
+n (Level 3)
 * AM160114	Anästhesieausweis
 * DG020116	Zugangscode Bildportal
 * VL010109	Sepsisdokumentation
